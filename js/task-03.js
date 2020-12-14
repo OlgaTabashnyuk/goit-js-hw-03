@@ -6,11 +6,11 @@ const findBestEmployee = function (employees) {
   const biggestValue = Math.max(...values);
   for (const key in employees) {
     if (employees[key] === biggestValue) {
-      const message = `${[key]}: ${biggestValue}`;
-      return message;
+      return key;
     }
   }
 };
+
 // // /*
 // //  * Вызовы функции для проверки работоспособности твоей реализации.
 // //  */
